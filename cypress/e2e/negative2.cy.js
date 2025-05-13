@@ -17,15 +17,7 @@ describe('Модуль Потребности – создание новой п
         // Открыть выпадающий список
         cy.get(
             'body > div:nth-child(15) > div.desktop-modal > div > div.vacancy-need-wrapper > form > div:nth-child(1) > div.form__labels > div > div:nth-child(5) > div > div > div').click()
-        cy.get(
-            'body > div:nth-child(15) > div.desktop-modal > div > div.vacancy-need-wrapper > form > div.form__buttons > button'
-        )
             .scrollIntoView()
             .click({ force: true })
-
-        cy.get(
-            '#app > div.page > div > div.header-container.header-personal > div.header-container__user-avatar-info > section > button'
-        ).click()
-
     })
 })
